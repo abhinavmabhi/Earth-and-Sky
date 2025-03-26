@@ -1,5 +1,10 @@
 
-
+.rounded-4{
+    transition: transform 0.2s ease-in-out;
+}
+.rounded-4:hover{
+    transform: scale(1.05);
+}
 
 
 body {

@@ -22,6 +22,11 @@
     <!-- bootstrap icons-------------------- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
+    <!-- AOS----------------------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
 
@@ -33,7 +38,7 @@
   
   <div class="header">
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="slide-right">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="">
@@ -104,7 +109,7 @@
 
 
       
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <video class="d-block w-100" autoplay muted loop playsinline>
@@ -112,8 +117,8 @@
                 Your browser does not support the video tag.
               </video>
               <div class="video-overlay"></div>
-              <div class="carousel-caption custom-caption">
-                <h1>Innovative Architectural Designs</h1>
+              <div class="carousel-caption custom-caption" >
+                <h1 >Innovative Architectural Designs</h1>
                 <p>Shaping the future skyline with cutting-edge construction.</p>
               </div>
             
@@ -165,29 +170,29 @@
        
   </div>
 
-  <div class="header_box">
+  <div class="header_box" >
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-                <div class="header_box_details">
+                <div class="header_box_details" data-aos="slide-right" >
                     <span class="counter" data-target="180">0</span>+
                     <h5>CURRENT CLIENTS</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-                <div class="header_box_details">
+                <div class="header_box_details" data-aos="slide-right" data-aos-delay="200">
                     <span class="counter" data-target="10">0</span>+
                     <h5>YEARS OF EXPERIENCE</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-                <div class="header_box_details">
+                <div class="header_box_details" data-aos="slide-right" data-aos-delay="300">
                     <span class="counter" data-target="30">0</span>+
                     <h5>AWARD WINNING</h5>
                 </div>
             </div>
             <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-                <div class="header_box_details">
+                <div class="header_box_details" data-aos="slide-right" data-aos-delay="400">
                     <span class="counter" data-target="5">0</span>+
                     <h5>OFFICES WORLDWIDE</h5>
                 </div>
@@ -210,11 +215,11 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-6 col-md-12 col-12 about_img">
+        <div class="col-lg-6 col-md-12 col-12 about_img" data-aos="fade-right" data-aos-delay="100">
           <img src="{% static "images/img4.jpg" %}" alt="">
         </div>
 
-        <div class="col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-between ">
+        <div class="col-lg-6 col-md-12 col-12 d-flex flex-column justify-content-between" data-aos="fade-right" data-aos-delay="300">
           <div class="d-flex flex-column justify-content-between" >
             <h2 class="mb-4">"Let’s shape your dream together, where
               Earth meets Sky"</h2>
@@ -241,28 +246,28 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-md-3" data-aos="slide-right" data-aos-delay="100">
               <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #D3D3D3; height: 200px;">
                   <i class="bi bi-building fs-1 text-primary"></i>
                   <h5 class="card-title mt-4 text-dark">TURNKEY PROJECTS</h5>
                   <a href="{% url 'what-we-offer' %}" class="btn btn-primary mt-3">Read More</a>
               </div>
           </div>
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-md-3" data-aos="slide-right" data-aos-delay="200">
               <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #00b7ff; height: 200px;">
                   <i class="bi bi-lightbulb fs-1 text-dark"></i>
                   <h5 class="card-title mt-4 text-dark">TOTAL CONSULTANCY</h5>
                   <a href="{% url 'what-we-offer' %}" class="btn btn-dark mt-3">Read More</a>
               </div>
           </div>
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-md-3" data-aos="slide-right" data-aos-delay="300">
               <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #D3D3D3; height: 200px;">
                   <i class="bi bi-brush fs-1 text-primary"></i>
                   <h5 class="card-title mt-4 text-dark">INTERIOR DESIGN</h5>
                   <a href="{% url 'what-we-offer' %}" class="btn btn-primary mt-3">Read More</a>
               </div>
           </div>
-          <div class="col-6 col-md-3">
+          <div class="col-6 col-md-3" data-aos="slide-right" data-aos-delay="400">
               <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #00b7ff; height: 200px;">
                   <i class="bi bi-tree fs-1 text-dark"></i>
                   <h5 class="card-title mt-4 text-dark">LANDSCAPE DESIGN</h5>
@@ -303,7 +308,7 @@
 
       <div class="row projects">
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img" data-aos="fade-right" >
           <a href="project-details">
             <div class="projects_details" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; height: 100%;">
               <div class="d-flex text-center flex-column">
@@ -315,7 +320,7 @@
           </a>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img" data-aos="fade-right" >
           <a href="project-details">
             <div class="projects_details" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; height: 100%;">
               <div class="d-flex text-center flex-column">
@@ -327,7 +332,7 @@
           </a>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img" data-aos="fade-right" >
           <a href="project-details">
             <div class="projects_details" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; height: 100%;">
               <div class="d-flex text-center flex-column">
@@ -339,7 +344,7 @@
           </a>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img" data-aos="fade-right" >
           <a href="project-details">
             <div class="projects_details" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; height: 100%;">
               <div class="d-flex text-center flex-column">
@@ -351,7 +356,7 @@
           </a>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img" data-aos="fade-right" >
           <a href="project-details">
             <div class="projects_details" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; height: 100%;">
               <div class="d-flex text-center flex-column">
@@ -363,7 +368,7 @@
           </a>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-12 projects_img" data-aos="fade-right" >
           <a href="project-details">
             <div class="projects_details" style="background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover; height: 100%;">
               <div class="d-flex text-center flex-column">
@@ -652,39 +657,42 @@
 
     <script src="{% static "js/main.js" %}"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const counters = document.querySelectorAll(".counter");
-          let counted = false; // Prevents recounting
-  
-          const countUp = (counter) => {
-              const target = +counter.getAttribute("data-target");
-              let count = 0;
-              const speed = target / 100; // Adjust speed based on value
-  
-              const updateCount = () => {
-                  if (count < target) {
-                      count += speed;
-                      counter.innerText = Math.floor(count);
-                      requestAnimationFrame(updateCount);
-                  } else {
-                      counter.innerText = target; // Ensures exact final value
-                  }
-              };
-  
-              updateCount();
-          };
-  
-          const observer = new IntersectionObserver(entries => {
-              entries.forEach(entry => {
-                  if (entry.isIntersecting && !counted) {
-                      counters.forEach(counter => countUp(counter));
-                      counted = true; // Ensures it runs only once
-                  }
-              });
-          }, { threshold: 0.5 });
-  
-          observer.observe(document.querySelector(".header_box"));
-      });
-  </script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".counter");
+        let counted = false; // Prevents recounting
+
+        const countUp = (counter) => {
+            const target = +counter.getAttribute("data-target");
+            let count = 0;
+            const speed = target / 100; // Adjust speed based on value
+
+            const updateCount = () => {
+                if (count < target) {
+                    count += speed;
+                    counter.innerText = Math.floor(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.innerText = target; // Ensures exact final value
+                }
+            };
+
+            updateCount();
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counted) {
+                    counters.forEach(counter => countUp(counter));
+                    counted = true; // Ensures it runs only once
+                }
+            });
+        }, { threshold: 0.5 });
+
+        observer.observe(document.querySelector(".header_box"));
+    });
+</script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
