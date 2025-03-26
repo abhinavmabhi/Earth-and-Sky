@@ -18,6 +18,10 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    <!-- bootstrap icons-------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 <body>
 
@@ -163,34 +167,34 @@
 
   <div class="header_box">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-          <div class="header_box_details">
-            <span> 180+ </span>
-            <h5>CURRENT CLIENTS</h5>
-          </div>
+        <div class="row">
+            <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
+                <div class="header_box_details">
+                    <span class="counter" data-target="180">0</span>+
+                    <h5>CURRENT CLIENTS</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
+                <div class="header_box_details">
+                    <span class="counter" data-target="10">0</span>+
+                    <h5>YEARS OF EXPERIENCE</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
+                <div class="header_box_details">
+                    <span class="counter" data-target="30">0</span>+
+                    <h5>AWARD WINNING</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
+                <div class="header_box_details">
+                    <span class="counter" data-target="5">0</span>+
+                    <h5>OFFICES WORLDWIDE</h5>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-          <div class="header_box_details">
-            <span> 10+ </span>
-            <h5>YEARS OF EXPERIENCE</h5>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-          <div class="header_box_details">
-            <span> 30+ </span>
-            <h5>AWARD WINNING</h5>
-          </div>
-        </div>
-        <div class="col-lg-3 col-6 mb-3 mt-3 text-center">
-          <div class="header_box_details">
-            <span> 5+ </span>
-            <h5>OFFICES WORLDWIDE</h5>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
   <div class="parallax_container1 d-flex justify-content-center align-items-center">
     <div class="container pb-5">
@@ -215,7 +219,7 @@
             <h2 class="mb-4">"Let’s shape your dream together, where
               Earth meets Sky"</h2>
 
-            <p class="mb-5">
+            <p class="mb-5" style="text-align: justify;">
               At Earth N’ Sky Architects & Engineers, we seamlessly integrate the artistry of architecture with the precision of engineering. Our mission is to design spaces that inspire, function efficiently, and stand the test of time. Innovation drives our creative process, ensuring every project reflects modern advancements while maintaining timeless appeal. Sustainability is at the heart of our work, allowing us to build in harmony with the natural environment. We believe that great design should enhance both human experience and ecological balance. Every structure we create is a testament to our dedication to excellence and craftsmanship. By combining aesthetics with functionality, we deliver designs that are both beautiful and practical. Our projects embrace modern living while respecting tradition and environmental responsibility. Through collaboration and expertise, we turn ideas into remarkable architectural realities. Our team is passionate about pushing boundaries to create spaces that enrich lives. We take pride in crafting designs that blend seamlessly with their surroundings. With each project, we strive to shape a future where architecture and nature coexist in perfect harmony. </p>
             </div>
           </div>
@@ -237,31 +241,36 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6 col-md-3">
-                <div class="bg-secondary border border-dark rounded-2 text-center p-3 mb-4" style="height: 180px;">
-                    <h5 class="card-title mt-2 text-white">TURNKEY PROJECTS</h5>
-                    <a href="{%url 'what-we-offer'%}" class="btn btn-primary mt-5">Read More</a>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="bg-primary border border-dark rounded-2 text-center p-3 mb-4" style="height: 180px;">
-                    <h5 class="card-title mt-2 text-white">TOTAL CONSULTANCY</h5>
-                    <a href="{%url 'what-we-offer'%}" class="btn btn-secondary mt-5">Read More</a>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="bg-secondary border border-dark rounded-2 text-center p-3 mb-4" style="height: 180px;">
-                    <h5 class="card-title mt-2 text-white">INTERIOR DESIGN</h5>
-                    <a href="{%url 'what-we-offer'%}" class="btn btn-primary mt-5">Read More</a>
-                </div>
-            </div>
-            <div class="col-6 col-md-3">
-                <div class="bg-primary border border-dark rounded-2 text-center p-3 mb-4" style="height: 180px;">
-                    <h5 class="card-title mt-2 text-white">LANDSCAPE DESIGN</h5>
-                    <a href="{%url 'what-we-offer'%}" class="btn btn-secondary mt-5">Read More</a>
-                </div>
-            </div>
-        </div>
+          <div class="col-6 col-md-3">
+              <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #D3D3D3; height: 200px;">
+                  <i class="bi bi-building fs-1 text-primary"></i>
+                  <h5 class="card-title mt-4 text-dark">TURNKEY PROJECTS</h5>
+                  <a href="{% url 'what-we-offer' %}" class="btn btn-primary mt-3">Read More</a>
+              </div>
+          </div>
+          <div class="col-6 col-md-3">
+              <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #00b7ff; height: 200px;">
+                  <i class="bi bi-lightbulb fs-1 text-dark"></i>
+                  <h5 class="card-title mt-4 text-dark">TOTAL CONSULTANCY</h5>
+                  <a href="{% url 'what-we-offer' %}" class="btn btn-dark mt-3">Read More</a>
+              </div>
+          </div>
+          <div class="col-6 col-md-3">
+              <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #D3D3D3; height: 200px;">
+                  <i class="bi bi-brush fs-1 text-primary"></i>
+                  <h5 class="card-title mt-4 text-dark">INTERIOR DESIGN</h5>
+                  <a href="{% url 'what-we-offer' %}" class="btn btn-primary mt-3">Read More</a>
+              </div>
+          </div>
+          <div class="col-6 col-md-3">
+              <div class="rounded-4 text-center p-3 mb-4 shadow" style="background-color: #00b7ff; height: 200px;">
+                  <i class="bi bi-tree fs-1 text-dark"></i>
+                  <h5 class="card-title mt-4 text-dark">LANDSCAPE DESIGN</h5>
+                  <a href="{% url 'what-we-offer' %}" class="btn btn-dark mt-3">Read More</a>
+              </div>
+          </div>
+      </div>
+      
     </div>
 </div>
 
@@ -642,5 +651,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <script src="{% static "js/main.js" %}"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const counters = document.querySelectorAll(".counter");
+          let counted = false; // Prevents recounting
+  
+          const countUp = (counter) => {
+              const target = +counter.getAttribute("data-target");
+              let count = 0;
+              const speed = target / 100; // Adjust speed based on value
+  
+              const updateCount = () => {
+                  if (count < target) {
+                      count += speed;
+                      counter.innerText = Math.floor(count);
+                      requestAnimationFrame(updateCount);
+                  } else {
+                      counter.innerText = target; // Ensures exact final value
+                  }
+              };
+  
+              updateCount();
+          };
+  
+          const observer = new IntersectionObserver(entries => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting && !counted) {
+                      counters.forEach(counter => countUp(counter));
+                      counted = true; // Ensures it runs only once
+                  }
+              });
+          }, { threshold: 0.5 });
+  
+          observer.observe(document.querySelector(".header_box"));
+      });
+  </script>
 </body>
 </html>
